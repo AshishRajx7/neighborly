@@ -10,7 +10,7 @@ https://neighborlybot-onk14ljif-ashishs-projects-dfea1d2b.vercel.app
 
 ## 🎯 What It Does
 
-- Allows users to [core feature, e.g., post messages, organize local events, or chat with neighbors].
+- Allows users to [core feature, e.g., post messages, organize local events, keep community people up to date with happenings].
 - Integrates with **Firebase** for authentication, database storage, and real-time updates.
 - Provides a user-friendly, responsive interface that works on both desktop and mobile browsers.
 
