@@ -1,20 +1,25 @@
-// firebaseConfig.ts
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { getAuth } from "firebase/auth";
+import { 
+  FIREBASE_API_KEY,
+  FIREBASE_AUTH_DOMAIN,
+  FIREBASE_PROJECT_ID,
+  FIREBASE_STORAGE_BUCKET,
+  FIREBASE_MESSAGING_SENDER_ID,
+  FIREBASE_APP_ID
+} from "@env";
+
 const firebaseConfig = {
-  apiKey: "AIzaSyAMTZMxzYlfaZM4TixbDpz4NJJ0pL4_Siw",
-  authDomain: "neighborly-7afaa.firebaseapp.com",
-  projectId: "neighborly-7afaa",
-  storageBucket: "neighborly-7afaa.firebasestorage.app",
-  messagingSenderId: "523945512124",
-  appId: "1:523945512124:web:d70af573c99018c0d554b9"
+  apiKey: FIREBASE_API_KEY,
+  authDomain: FIREBASE_AUTH_DOMAIN,
+  projectId: FIREBASE_PROJECT_ID,
+  storageBucket: FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: FIREBASE_MESSAGING_SENDER_ID, // ✅ fixed
+  appId: FIREBASE_APP_ID,
 };
 
-
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-// Firestore database
 export const db = getFirestore(app);
 export const auth = getAuth(app);

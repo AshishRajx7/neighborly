@@ -6,7 +6,7 @@ import { Provider as PaperProvider } from "react-native-paper";
 import HomeScreen from "./screens/HomeScreen";
 import BrowseScreen from "./screens/BrowseScreen";
 import PostDetailsScreen from "./screens/PostDetailsScreen";
-import NewPostScreen from "./screens/NewPostScreen"; // ⬅️ added
+import NewPostScreen from "./screens/NewPostScreen"; // 
 import AuthScreen from "./screens/AuthScreen";
 
 // Typed routes (future-proof)
